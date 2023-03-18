@@ -36,7 +36,7 @@ var (
 )
 
 func init() {
-	engine.OnRegex(`^(?:chatgpt|//)([\s\S]*)$`, zero.OnlyToMe, getdb).SetBlock(false).
+	engine.OnRegex(`^(?:>/|//)([\s\S]*)$`, zero.OnlyToMe, getdb).SetBlock(false).
 		Handle(func(ctx *zero.Ctx) {
 			args := ctx.State["regex_matched"].([]string)[1]
 			key := sessionKey{
