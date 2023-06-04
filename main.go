@@ -37,12 +37,12 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/sleep_manage" // 统计睡眠时间
 
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/atri" // ATRI词库
-	
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/manager" // 群管
 
-	_ "github.com/FloatTech/zbputils/job" // 定时指令触发器
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/manager" // 群管
 	
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/chatgpt" // chatgpt
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/chatgpt" // Chatgpt
+	
+	_ "github.com/FloatTech/zbputils/job" // 定时指令触发器
 
 	//                               ^^^^                               //
 	//                          ^^^^^^^^^^^^^^                          //
@@ -258,8 +258,7 @@ func init() {
 
 	// 通过代码写死的方式添加主人账号
 	// sus = append(sus, 12345678)
-	
-	// sus = append(sus, 1025207065)
+	// sus = append(sus, 87654321)
 
 	// 启用 webui
 	// go webctrl.RunGui(*g)
